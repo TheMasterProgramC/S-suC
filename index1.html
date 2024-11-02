@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>MI CORAZONCITO AZUL.</strong>
+                        <p>
+ Eres la luz que ilumina mis días oscuros y la melodía que da ritmo a mi corazón. Si pudiera atraparte en un abrazo eterno y alejar todas tus tristezas, lo haría sin dudarlo. recuerda que estoy aquí, amándote con toda mi alma. Siempre estaré aquí, como tu apoyo incondicional. Te amo más de lo que las palabras pueden expresar.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+
+<audio  autoplay loop>
+    <source src="audio.mp3" type="audio/mp3">
+  </audio>
+ 
+ 
